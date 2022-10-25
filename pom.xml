@@ -6,7 +6,7 @@
 
     <groupId>com.owanbe.api.shared</groupId>
     <artifactId>shared-lib</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0-snapshot</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
