@@ -23,7 +23,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: maven-settings-action
-      uses: s4u/maven-settings-action@v2
+      uses: s4u/maven-settings-action@v2.7.0
       with:
         servers: '[
                 {"id": "github","configuration": {"httpHeaders": {"property": {"name": "Authorization","value": "Bearer ${{ secrets.TOKEN }}"}}}}]'
