@@ -28,4 +28,4 @@ jobs:
         servers: '[
                 {"id": "github","configuration": {"httpHeaders": {"property": {"name": "Authorization","value": "Bearer ${{ secrets.TOKEN }}"}}}}]'
     - name: Build with Maven
-      run: mvn deploy
+      run: mvn clean deploy
