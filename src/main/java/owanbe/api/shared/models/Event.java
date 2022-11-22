@@ -8,6 +8,7 @@ public class Event {
     private String eventVenue;
     private String eventDate;
     private String eventTime;
+    private String eventImageUrl;
     private List<TicketRequest> tickets;
 
     public String getEventRef() {
@@ -48,6 +49,14 @@ public class Event {
 
     public void setEventTime(String eventTime) {
         this.eventTime = eventTime;
+    }
+
+    public String getEventImageUrl() {
+        return eventImageUrl;
+    }
+
+    public void setEventImageUrl(String eventImageUrl) {
+        this.eventImageUrl = eventImageUrl;
     }
 
     public List<TicketRequest> getTickets() {
