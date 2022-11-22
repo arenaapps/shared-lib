@@ -1,24 +1,33 @@
 package owanbe.api.shared.models;
 
 public class TicketRequest {
-    private String ticketTypeRef;
-    private String ticketTypeName;
+    private String ticketRef;
+    private String ticketName;
+    private String ticketDescription;
     private int ticketQuantity;
 
-    public String getTicketTypeRef() {
-        return ticketTypeRef;
+    public String getTicketRef() {
+        return ticketRef;
     }
 
-    public void setTicketTypeRef(String ticketTypeRef) {
-        this.ticketTypeRef = ticketTypeRef;
+    public void setTicketRef(String ticketRef) {
+        this.ticketRef = ticketRef;
     }
 
-    public String getTicketTypeName() {
-        return ticketTypeName;
+    public String getTicketName() {
+        return ticketName;
     }
 
-    public void setTicketTypeName(String ticketTypeName) {
-        this.ticketTypeName = ticketTypeName;
+    public void setTicketName(String ticketName) {
+        this.ticketName = ticketName;
+    }
+
+    public String getTicketDescription() {
+        return ticketDescription;
+    }
+
+    public void setTicketDescription(String ticketDescription) {
+        this.ticketDescription = ticketDescription;
     }
 
     public int getTicketQuantity() {
