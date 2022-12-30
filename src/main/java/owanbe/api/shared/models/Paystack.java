@@ -6,6 +6,7 @@ public class Paystack {
     private BigDecimal pricePerTicket;
     private BigDecimal priceInTotal;
     private String reference;
+    private String authUrl;
 
     public BigDecimal getPricePerTicket() {
         return pricePerTicket;
@@ -29,5 +30,13 @@ public class Paystack {
 
     public void setReference(String reference) {
         this.reference = reference;
+    }
+
+    public String getAuthUrl() {
+        return authUrl;
+    }
+
+    public void setAuthUrl(String authUrl) {
+        this.authUrl = authUrl;
     }
 }
