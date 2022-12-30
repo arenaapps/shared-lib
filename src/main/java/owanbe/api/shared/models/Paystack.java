@@ -1,22 +1,33 @@
 package owanbe.api.shared.models;
 
-public class Paystack {
-    private String pricePerTicket;
-    private String priceInTotal;
+import java.math.BigDecimal;
 
-    public String getPricePerTicket() {
+public class Paystack {
+    private BigDecimal pricePerTicket;
+    private BigDecimal priceInTotal;
+    private String reference;
+
+    public BigDecimal getPricePerTicket() {
         return pricePerTicket;
     }
 
-    public void setPricePerTicket(String pricePerTicket) {
+    public void setPricePerTicket(BigDecimal pricePerTicket) {
         this.pricePerTicket = pricePerTicket;
     }
 
-    public String getPriceInTotal() {
+    public BigDecimal getPriceInTotal() {
         return priceInTotal;
     }
 
-    public void setPriceInTotal(String priceInTotal) {
+    public void setPriceInTotal(BigDecimal priceInTotal) {
         this.priceInTotal = priceInTotal;
+    }
+
+    public String getReference() {
+        return reference;
+    }
+
+    public void setReference(String reference) {
+        this.reference = reference;
     }
 }
